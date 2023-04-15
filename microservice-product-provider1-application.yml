@@ -37,11 +37,11 @@ eureka:
     instanceId: ${spring.application.name}:${server.port} # 等价于microservice-product:8001
     prefer-ip-address: true #访问路径就会显示成IP地址
 # 在被监控服务上添加暴露端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: hystrix.stream
 ---
 server:
   port: 8001
@@ -78,8 +78,8 @@ eureka:
     instanceId: ${spring.application.name}:${server.port} # 等价于microservice-product:8001
     prefer-ip-address: true #访问路径就会显示成IP地址
 # 在被监控服务上添加暴露端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: hystrix.stream
